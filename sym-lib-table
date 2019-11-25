@@ -1,3 +1,4 @@
 (sym_lib_table
   (lib (name Radio)(type Legacy)(uri ${KIPRJMOD}/Radio.lib)(options "")(descr ""))
+  (lib (name teensy)(type Legacy)(uri ${KIPRJMOD}/libs/teensy.lib)(options "")(descr ""))
 )
