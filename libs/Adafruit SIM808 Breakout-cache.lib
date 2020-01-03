@@ -33,4 +33,15 @@ X Key 9 -750 -50 300 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
+# bno055
+#
+DEF bno055 U 0 40 Y Y 1 F N
+F0 "U" 0 0 50 H V C CNN
+F1 "bno055" 0 0 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+ENDDRAW
+ENDDEF
+#
 #End Library
