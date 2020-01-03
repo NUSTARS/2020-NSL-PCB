@@ -1,5 +1,5 @@
 (sym_lib_table
-  (lib (name Radio)(type Legacy)(uri ${KIPRJMOD}/Radio.lib)(options "")(descr ""))
+  (lib (name Radio)(type Legacy)(uri ${KIPRJMOD}/libs/Radio.lib)(options "")(descr ""))
   (lib (name teensy)(type Legacy)(uri ${KIPRJMOD}/libs/teensy.lib)(options "")(descr ""))
-  (lib (name "Adafruit SIM808 Breakout-cache")(type Legacy)(uri "${KIPRJMOD}/libs/Adafruit SIM808 Breakout-cache.lib")(options "")(descr ""))
+  (lib (name FONA808)(type Legacy)(uri "${KIPRJMOD}/libs/Adafruit SIM808 Breakout-cache.lib")(options "")(descr ""))
 )

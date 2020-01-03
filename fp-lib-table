@@ -1,3 +1,3 @@
 (fp_lib_table
-  (lib (name "Adafruit SIM808 Breakout Copy")(type KiCad)(uri "C:/Users/selin/Documents/Adafruit SIM808 Breakout/Adafruit SIM808 Breakout Copy.pretty")(options "")(descr ""))
+  (lib (name "NUSTARS Libs")(type KiCad)(uri ${KIPRJMOD}/libs)(options "")(descr ""))
 )
