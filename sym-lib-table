@@ -1,5 +1,9 @@
 (sym_lib_table
-  (lib (name Radio)(type Legacy)(uri ${KIPRJMOD}/libs/Radio.lib)(options "")(descr ""))
+  (lib (name Radio)(type Legacy)(uri ${KIPRJMOD}/libs/Radio.lib)(options "")(descr "")(disabled))
   (lib (name teensy)(type Legacy)(uri ${KIPRJMOD}/libs/teensy.lib)(options "")(descr ""))
-  (lib (name FONA808)(type Legacy)(uri "${KIPRJMOD}/libs/Adafruit SIM808 Breakout-cache.lib")(options "")(descr ""))
+  (lib (name FONA808)(type Legacy)(uri "${KIPRJMOD}/libs/Adafruit SIM808 Breakout-cache.lib")(options "")(descr "")(disabled))
+  (lib (name VNH5019)(type Legacy)(uri ${KIPRJMOD}/libs/VNH5019_breakout.lib)(options "")(descr "")(disabled))
+  (lib (name BNO055)(type Legacy)(uri ${KIPRJMOD}/libs/bno055-breakout.lib)(options "")(descr "")(disabled))
+  (lib (name HC-SR04)(type Legacy)(uri ${KIPRJMOD}/libs/HC-SR04.lib)(options "")(descr "")(disabled))
+  (lib (name NUSTARS)(type Legacy)(uri ${KIPRJMOD}/NUSTARS.lib)(options "")(descr ""))
 )

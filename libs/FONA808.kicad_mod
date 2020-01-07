@@ -1,9 +1,9 @@
-(module "Adafruit SIM808 Breakout:FONA808" (layer F.Cu) (tedit 5DF3059D)
+(module FONA808 (layer F.Cu) (tedit 5E0F8687)
   (fp_text reference 1 (at -20.3962 -1.8288) (layer F.SilkS) hide
     (effects (font (size 0.77216 0.77216) (thickness 0.138988)) (justify left bottom))
   )
-  (fp_text value FONA808 (at -20.32 3.175) (layer F.Fab)
-    (effects (font (size 0.38608 0.38608) (thickness 0.038608)) (justify left bottom))
+  (fp_text value FONA808 (at -3.81 -20.32) (layer F.Fab)
+    (effects (font (size 1 1) (thickness 0.038608)) (justify left bottom))
   )
   (fp_line (start -20.32 -0.635) (end -20.32 0.635) (layer F.Fab) (width 0.2032))
   (fp_poly (pts (xy 16.256 0.254) (xy 16.764 0.254) (xy 16.764 -0.254) (xy 16.256 -0.254)) (layer F.Fab) (width 0))
