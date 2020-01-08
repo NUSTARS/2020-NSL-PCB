@@ -38,12 +38,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5E1EFEDF
-P 5400 2300
-F 0 "J1" H 5480 2292 50  0000 L CNN
-F 1 "Conn_01x02" H 5480 2201 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 5400 2300 50  0001 C CNN
-F 3 "~" H 5400 2300 50  0001 C CNN
-	1    5400 2300
+P 5700 2500
+F 0 "J1" H 5780 2492 50  0000 L CNN
+F 1 "Conn_01x02" H 5780 2401 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 5700 2500 50  0001 C CNN
+F 3 "~" H 5700 2500 50  0001 C CNN
+	1    5700 2500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -61,20 +61,12 @@ Text GLabel 2400 4850 0    50   Input ~ 0
 SCL
 Text GLabel 2400 4750 0    50   Input ~ 0
 SDA
-Text GLabel 5200 2300 0    50   Input ~ 0
+Text GLabel 5100 2500 0    50   Input ~ 0
 VBAT
-Text GLabel 5200 2400 0    50   Input ~ 0
+Text GLabel 5100 2600 0    50   Input ~ 0
 GND
 Text GLabel 4600 4850 2    50   Input ~ 0
 3V3T
-Text GLabel 6050 3650 2    50   Input ~ 0
-GND
-Text GLabel 6050 4250 2    50   Input ~ 0
-GND
-Text GLabel 6050 4150 2    50   Input ~ 0
-3V3T
-Text GLabel 6050 3550 2    50   Input ~ 0
-VBAT
 Text GLabel 6450 2400 0    50   Input ~ 0
 3V3T
 Text GLabel 6450 2850 0    50   Input ~ 0
@@ -126,4 +118,43 @@ Wire Wire Line
 	1200 2850 950  2850
 Wire Wire Line
 	950  2950 1200 2950
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5E1530D8
+P 5300 2500
+F 0 "SW1" H 5300 2400 50  0000 C CNN
+F 1 "SW_SPST" H 5300 2300 50  0000 C CNN
+F 2 "NUSTARS:GF-123-0054" H 5300 2500 50  0001 C CNN
+F 3 "~" H 5300 2500 50  0001 C CNN
+	1    5300 2500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5500 2600 5100 2600
+$Comp
+L Device:LED D1
+U 1 1 5E15F99C
+P 6200 3900
+F 0 "D1" H 6193 4116 50  0000 C CNN
+F 1 "LED" H 6193 4025 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6200 3900 50  0001 C CNN
+F 3 "~" H 6200 3900 50  0001 C CNN
+	1    6200 3900
+	1    0    0    -1  
+$EndComp
+Text GLabel 6350 3900 2    50   Input ~ 0
+VBAT
+$Comp
+L Device:R_Small_US R1
+U 1 1 5E163AC3
+P 5950 3900
+F 0 "R1" V 5745 3900 50  0000 C CNN
+F 1 "110" V 5836 3900 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 5950 3900 50  0001 C CNN
+F 3 "~" H 5950 3900 50  0001 C CNN
+	1    5950 3900
+	0    1    1    0   
+$EndComp
+Text GLabel 5850 3900 0    50   Input ~ 0
+GND
 $EndSCHEMATC
