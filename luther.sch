@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:luther-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -88,7 +89,7 @@ L Connector_Generic:Conn_01x02 J1
 U 1 1 5E161FCD
 P 8800 1150
 F 0 "J1" H 8880 1142 50  0000 L CNN
-F 1 "Conn_01x02" H 8880 1051 50  0000 L CNN
+F 1 "BAT" H 8880 1051 50  0000 L CNN
 F 2 "NUSTARS Libs:DEANS" H 8800 1150 50  0001 C CNN
 F 3 "~" H 8800 1150 50  0001 C CNN
 	1    8800 1150
@@ -180,10 +181,10 @@ M1_DIR
 Text GLabel 4150 6050 2    50   Input ~ 0
 GND
 $Comp
-L Connector_Generic:Conn_01x03 J3
+L Connector_Generic:Conn_01x03 LEVER1
 U 1 1 5E2412EE
 P 7300 5700
-F 0 "J3" H 7380 5742 50  0000 L CNN
+F 0 "LEVER1" H 7380 5742 50  0000 L CNN
 F 1 "SERVO_LEVER" H 7380 5651 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 7300 5700 50  0001 C CNN
 F 3 "~" H 7300 5700 50  0001 C CNN
@@ -241,10 +242,10 @@ M0_DIR
 Text GLabel 3250 5600 0    50   Input ~ 0
 M0_DISABLE
 $Comp
-L Connector_Generic:Conn_01x03 J2
+L Connector_Generic:Conn_01x03 WIRE1
 U 1 1 5E24D9D0
 P 7300 5300
-F 0 "J2" H 7380 5342 50  0000 L CNN
+F 0 "WIRE1" H 7380 5342 50  0000 L CNN
 F 1 "SERVO_WIRE" H 7380 5251 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 7300 5300 50  0001 C CNN
 F 3 "~" H 7300 5300 50  0001 C CNN
@@ -256,10 +257,10 @@ Text GLabel 7100 6000 0    50   Input ~ 0
 Text GLabel 6150 5300 0    50   Input ~ 0
 GND
 $Comp
-L Connector_Generic:Conn_01x03 J4
+L Connector_Generic:Conn_01x03 CLOCK1
 U 1 1 5E241714
 P 7300 6100
-F 0 "J4" H 7380 6142 50  0000 L CNN
+F 0 "CLOCK1" H 7380 6142 50  0000 L CNN
 F 1 "SERVO_CLOCK" H 7380 6051 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 7300 6100 50  0001 C CNN
 F 3 "~" H 7300 6100 50  0001 C CNN
@@ -289,11 +290,11 @@ F 3 "~" H 5800 5600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 7100 5400 0    50   Input ~ 0
-SRV_W_PWM
+S_W_PWM
 Text GLabel 7100 5800 0    50   Input ~ 0
-SRV_L_PWM
+S_L_PWM
 Text GLabel 7100 6200 0    50   Input ~ 0
-SRV_C_PWM
+S_C_PWM
 Wire Wire Line
 	6000 5700 7100 5700
 Wire Wire Line
@@ -398,17 +399,6 @@ F 3 "~" H 10300 1250 50  0001 C CNN
 	1    10300 1250
 	1    0    0    -1  
 $EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5E2DD8C1
-P 10300 1500
-F 0 "H4" H 10400 1546 50  0000 L CNN
-F 1 "MountingHole" H 10400 1455 50  0000 L CNN
-F 2 "MountingHole:MountingHole_3.2mm_M3" H 10300 1500 50  0001 C CNN
-F 3 "~" H 10300 1500 50  0001 C CNN
-	1    10300 1500
-	1    0    0    -1  
-$EndComp
 Text GLabel 8450 4300 2    50   Input ~ 0
 LORA_ANTENNA
 Wire Wire Line
@@ -418,4 +408,45 @@ Wire Wire Line
 	8200 4100 8300 4100
 Wire Wire Line
 	8200 4300 8450 4300
+Text GLabel 2450 1450 0    50   Input ~ 0
+M1_PWM
+Text GLabel 2450 1550 0    50   Input ~ 0
+M1_DIR
+Text GLabel 2450 1650 0    50   Input ~ 0
+M1_DISABLE
+Text GLabel 2450 1750 0    50   Input ~ 0
+M0_PWM
+Text GLabel 2450 1850 0    50   Input ~ 0
+M0_DIR
+Text GLabel 2450 1950 0    50   Input ~ 0
+M0_DISABLE
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5E23D450
+P 5700 2450
+F 0 "J2" H 5780 2442 50  0000 L CNN
+F 1 "Conn_01x04" H 5780 2351 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 5700 2450 50  0001 C CNN
+F 3 "~" H 5700 2450 50  0001 C CNN
+	1    5700 2450
+	1    0    0    -1  
+$EndComp
+Text GLabel 5500 2350 0    50   Input ~ 0
+3V3T
+Text GLabel 5500 2450 0    50   Input ~ 0
+GND
+Text GLabel 5500 2550 0    50   Input ~ 0
+SCL
+Text GLabel 5500 2650 0    50   Input ~ 0
+SDA
+Text GLabel 4650 3750 2    50   Input ~ 0
+S_W_NMOS
+Text GLabel 4650 3850 2    50   Input ~ 0
+S_W_PWM
+Text GLabel 2450 3850 0    50   Input ~ 0
+S_L_NMOS
+Text GLabel 2450 3250 0    50   Input ~ 0
+S_L_PWM
+Text GLabel 2450 3150 0    50   Input ~ 0
+S_C_PWM
 $EndSCHEMATC
