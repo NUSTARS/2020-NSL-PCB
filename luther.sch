@@ -16,317 +16,406 @@ $EndDescr
 $Comp
 L teensy:Teensy4.0 U1
 U 1 1 5E0EA75C
-P 2100 2400
-F 0 "U1" H 2100 4015 50  0000 C CNN
-F 1 "Teensy4.0" H 2100 3924 50  0000 C CNN
-F 2 "NUSTARS Libs:Teensy40" H 1700 2600 50  0001 C CNN
-F 3 "" H 1700 2600 50  0001 C CNN
-	1    2100 2400
+P 3550 2500
+F 0 "U1" H 3550 4115 50  0000 C CNN
+F 1 "Teensy4.0" H 3550 4024 50  0000 C CNN
+F 2 "NUSTARS Libs:Teensy40" H 3150 2700 50  0001 C CNN
+F 3 "" H 3150 2700 50  0001 C CNN
+	1    3550 2500
 	1    0    0    -1  
 $EndComp
 $Comp
 L NUSTARS:RFM95W_LoRa_Radio U2
 U 1 1 5E0EB44E
-P 8100 2600
-F 0 "U2" V 7535 2525 50  0000 C CNN
-F 1 "RFM95W_LoRa_Radio" V 7626 2525 50  0000 C CNN
-F 2 "NUSTARS Libs:RFM95W" H 8200 2650 50  0001 C CNN
-F 3 "" H 8200 2650 50  0001 C CNN
-	1    8100 2600
+P 7800 3350
+F 0 "U2" V 7235 3275 50  0000 C CNN
+F 1 "RFM95W_LoRa_Radio" V 7326 3275 50  0000 C CNN
+F 2 "NUSTARS Libs:RFM95W" H 7900 3400 50  0001 C CNN
+F 3 "" H 7900 3400 50  0001 C CNN
+	1    7800 3350
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	3200 3550 3400 3550
+	4650 3650 4850 3650
 Wire Wire Line
-	3200 3450 3750 3450
+	4650 3550 5200 3550
 Wire Wire Line
-	3750 3450 3750 3550
+	5200 3550 5200 3650
 Wire Wire Line
-	3200 3350 3750 3350
+	4650 3450 5200 3450
 Wire Wire Line
-	3750 3350 3750 3250
-Text GLabel 7600 2550 0    50   Input ~ 0
+	5200 3450 5200 3350
+Text GLabel 7300 3300 0    50   Input ~ 0
 GND
-Text GLabel 7600 2400 0    50   Input ~ 0
-3V3B
-Text GLabel 1000 2350 0    50   Input ~ 0
-MISO
-Text GLabel 1000 2250 0    50   Input ~ 0
-MOSI
-Text GLabel 1000 2150 0    50   Input ~ 0
-CS
-Text GLabel 1000 2950 0    50   Input ~ 0
-SCK
-Text GLabel 1000 1050 0    50   Input ~ 0
-GND
-Text GLabel 3750 3550 2    50   Input ~ 0
-GND
-Text GLabel 3400 3550 2    50   Input ~ 0
+Text GLabel 7300 3150 0    50   Input ~ 0
 3V3T
-Text GLabel 3750 3250 2    50   Input ~ 0
-5V
-Text Notes 7750 2350 0    50   ~ 0
-Vin=logic level\nmust = 3.3v\n
-Text GLabel 7600 3150 0    50   Input ~ 0
+Text GLabel 2450 2450 0    50   Input ~ 0
 MISO
-Text GLabel 7600 3300 0    50   Input ~ 0
+Text GLabel 2450 2350 0    50   Input ~ 0
 MOSI
-Text GLabel 7600 3450 0    50   Input ~ 0
+Text GLabel 2450 2250 0    50   Input ~ 0
 CS
-Text GLabel 7600 3600 0    50   Input ~ 0
-LORA_RST
-Text GLabel 7600 3000 0    50   Input ~ 0
+Text GLabel 2450 3050 0    50   Input ~ 0
 SCK
-Text GLabel 7600 2850 0    50   Input ~ 0
+Text GLabel 2450 1150 0    50   Input ~ 0
+GND
+Text GLabel 5200 3650 2    50   Input ~ 0
+GND
+Text GLabel 4850 3650 2    50   Input ~ 0
+3V3T
+Text GLabel 5200 3350 2    50   Input ~ 0
+5V
+Text Notes 7450 3100 0    50   ~ 0
+Vin=logic level\nmust = 3.3v\n
+Text GLabel 7300 3900 0    50   Input ~ 0
+MISO
+Text GLabel 7300 4050 0    50   Input ~ 0
+MOSI
+Text GLabel 7300 4200 0    50   Input ~ 0
+CS
+Text GLabel 7300 4350 0    50   Input ~ 0
+LORA_RST
+Text GLabel 7300 3750 0    50   Input ~ 0
+SCK
+Text GLabel 7300 3600 0    50   Input ~ 0
 LORA_INT
-$Comp
-L NUSTARS:VHN5019_Breakout U4
-U 1 1 5E112279
-P 3150 4950
-F 0 "U4" H 3525 5125 50  0000 C CNN
-F 1 "VHN5019_Breakout" H 3525 5034 50  0000 C CNN
-F 2 "NUSTARS Libs:VNH5019_breakout" H 3950 5050 50  0001 C CNN
-F 3 "" H 3950 5050 50  0001 C CNN
-	1    3150 4950
-	1    0    0    -1  
-$EndComp
-$Comp
-L NUSTARS:VHN5019_Breakout U3
-U 1 1 5E114C64
-P 1350 4950
-F 0 "U3" H 1725 5125 50  0000 C CNN
-F 1 "VHN5019_Breakout" H 1725 5034 50  0000 C CNN
-F 2 "NUSTARS Libs:VNH5019_breakout" H 2150 5050 50  0001 C CNN
-F 3 "" H 2150 5050 50  0001 C CNN
-	1    1350 4950
-	1    0    0    -1  
-$EndComp
-Text GLabel 1000 3450 0    50   Input ~ 0
+Text GLabel 2450 3550 0    50   Input ~ 0
 SDA
-Text GLabel 1000 3550 0    50   Input ~ 0
+Text GLabel 2450 3650 0    50   Input ~ 0
 SCL
 $Comp
 L Connector_Generic:Conn_01x02 J1
 U 1 1 5E161FCD
-P 7350 1050
-F 0 "J1" H 7430 1042 50  0000 L CNN
-F 1 "Conn_01x02" H 7430 951 50  0000 L CNN
-F 2 "NUSTARS Libs:DEANS" H 7350 1050 50  0001 C CNN
-F 3 "~" H 7350 1050 50  0001 C CNN
-	1    7350 1050
+P 8800 1150
+F 0 "J1" H 8880 1142 50  0000 L CNN
+F 1 "Conn_01x02" H 8880 1051 50  0000 L CNN
+F 2 "NUSTARS Libs:DEANS" H 8800 1150 50  0001 C CNN
+F 3 "~" H 8800 1150 50  0001 C CNN
+	1    8800 1150
 	1    0    0    -1  
 $EndComp
-Text GLabel 6000 850  0    50   Input ~ 0
+Text GLabel 7450 950  0    50   Input ~ 0
 VBAT
-Text GLabel 7150 1550 2    50   Input ~ 0
+Text GLabel 8600 1650 2    50   Input ~ 0
 GND
 $Comp
 L NUSTARS:BUCK U6
 U 1 1 5E18BC63
-P 6200 1500
-F 0 "U6" H 6425 1675 50  0000 C CNN
-F 1 "BUCK" H 6425 1584 50  0000 C CNN
-F 2 "" H 6600 1550 50  0001 C CNN
-F 3 "" H 6600 1550 50  0001 C CNN
-	1    6200 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L NUSTARS:BUCK U7
-U 1 1 5E18C02C
-P 6200 2050
-F 0 "U7" H 6425 2225 50  0000 C CNN
-F 1 "BUCK" H 6425 2134 50  0000 C CNN
-F 2 "" H 6600 2100 50  0001 C CNN
-F 3 "" H 6600 2100 50  0001 C CNN
-	1    6200 2050
+P 7650 1600
+F 0 "U6" H 7875 1775 50  0000 C CNN
+F 1 "BUCK" H 7875 1684 50  0000 C CNN
+F 2 "NUSTARS Libs:D24V50F5" H 8050 1650 50  0001 C CNN
+F 3 "" H 8050 1650 50  0001 C CNN
+	1    7650 1600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 1750 5600 1750
-Wire Wire Line
-	5600 1750 5600 2300
-Wire Wire Line
-	5600 2300 6100 2300
+	7550 1850 7050 1850
 $Comp
 L Switch:SW_SPST SW1
 U 1 1 5E195697
-P 6950 1050
-F 0 "SW1" H 6950 825 50  0000 C CNN
-F 1 "SW_SPST" H 6950 916 50  0000 C CNN
-F 2 "NUSTARS Libs:GF-123-0054" H 6950 1050 50  0001 C CNN
-F 3 "~" H 6950 1050 50  0001 C CNN
-	1    6950 1050
+P 8400 1150
+F 0 "SW1" H 8400 925 50  0000 C CNN
+F 1 "SW_SPST" H 8400 1016 50  0000 C CNN
+F 2 "NUSTARS Libs:GF-123-0054" H 8400 1150 50  0001 C CNN
+F 3 "~" H 8400 1150 50  0001 C CNN
+	1    8400 1150
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	6750 1050 6000 1050
+	8200 1150 7450 1150
 Wire Wire Line
-	5600 1050 5600 1750
-Connection ~ 5600 1750
+	7050 1150 7050 1850
 Wire Wire Line
-	6000 850  6000 1050
-Connection ~ 6000 1050
+	7450 950  7450 1150
+Connection ~ 7450 1150
 Wire Wire Line
-	6000 1050 5600 1050
+	7450 1150 7050 1150
 $Comp
 L Device:LED D1
 U 1 1 5E1979BD
-P 5200 1050
-F 0 "D1" H 5193 1266 50  0000 C CNN
-F 1 "LED" H 5193 1175 50  0000 C CNN
-F 2 "" H 5200 1050 50  0001 C CNN
-F 3 "~" H 5200 1050 50  0001 C CNN
-	1    5200 1050
+P 6650 1150
+F 0 "D1" H 6643 1366 50  0000 C CNN
+F 1 "LED" H 6643 1275 50  0000 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6650 1150 50  0001 C CNN
+F 3 "~" H 6650 1150 50  0001 C CNN
+	1    6650 1150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R_Small_US R1
 U 1 1 5E19800E
-P 4950 1050
-F 0 "R1" V 4745 1050 50  0000 C CNN
-F 1 "330" V 4836 1050 50  0000 C CNN
-F 2 "" H 4950 1050 50  0001 C CNN
-F 3 "~" H 4950 1050 50  0001 C CNN
-	1    4950 1050
+P 6400 1150
+F 0 "R1" V 6195 1150 50  0000 C CNN
+F 1 "330" V 6286 1150 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 6400 1150 50  0001 C CNN
+F 3 "~" H 6400 1150 50  0001 C CNN
+	1    6400 1150
 	0    1    1    0   
 $EndComp
-Text GLabel 4850 1050 0    50   Input ~ 0
+Text GLabel 6300 1150 0    50   Input ~ 0
 GND
 Wire Wire Line
-	5600 1050 5350 1050
-Connection ~ 5600 1050
+	7050 1150 6800 1150
+Connection ~ 7050 1150
 Wire Wire Line
-	6750 2300 6750 2100
+	8200 1850 8200 1650
 Wire Wire Line
-	6750 1750 6750 1550
-Connection ~ 6750 1750
+	8600 1650 8200 1650
+Connection ~ 8200 1650
 Wire Wire Line
-	6750 1750 6750 2100
-Connection ~ 6750 2100
-Wire Wire Line
-	7150 1550 6750 1550
-Connection ~ 6750 1550
-Wire Wire Line
-	7150 1150 7150 1550
-Text GLabel 6100 1550 0    50   Input ~ 0
+	8600 1250 8600 1650
+Text GLabel 7550 1650 0    50   Input ~ 0
 5V
-Text GLabel 6100 2100 0    50   Input ~ 0
-3V3B
-Text GLabel 2200 5600 2    50   Input ~ 0
+Text GLabel 4150 6150 2    50   Input ~ 0
 VBAT
-Text GLabel 4000 5600 2    50   Input ~ 0
-VBAT
-Text GLabel 1000 1150 0    50   Input ~ 0
+Text GLabel 2450 1250 0    50   Input ~ 0
 LORA_INT
-Text GLabel 1000 1250 0    50   Input ~ 0
+Text GLabel 2450 1350 0    50   Input ~ 0
 LORA_RST
-Text GLabel 3050 5700 0    50   Input ~ 0
-GND
-Text GLabel 1250 5700 0    50   Input ~ 0
-GND
-Text GLabel 1250 5600 0    50   Input ~ 0
-3V3T
-Text GLabel 3050 5600 0    50   Input ~ 0
-3V3T
-Text GLabel 1250 5000 0    50   Input ~ 0
-M0_INA
-Text GLabel 3050 5000 0    50   Input ~ 0
-M1_INA
-Text GLabel 1250 5200 0    50   Input ~ 0
-M0_PWM
-Text GLabel 3050 5200 0    50   Input ~ 0
+Text GLabel 3250 6250 0    50   Input ~ 0
 M1_PWM
-Text GLabel 3050 5500 0    50   Input ~ 0
-M1_INB
-Text GLabel 1250 5500 0    50   Input ~ 0
-M0_INB
-Text GLabel 4000 5500 2    50   Input ~ 0
-GND
-Text GLabel 2200 5500 2    50   Input ~ 0
-GND
-$Comp
-L NUSTARS:VHN5019_Breakout U5
-U 1 1 5E1F5A39
-P 1350 6300
-F 0 "U5" H 1725 6475 50  0000 C CNN
-F 1 "VHN5019_Breakout" H 1725 6384 50  0000 C CNN
-F 2 "NUSTARS Libs:VNH5019_breakout" H 2150 6400 50  0001 C CNN
-F 3 "" H 2150 6400 50  0001 C CNN
-	1    1350 6300
-	1    0    0    -1  
-$EndComp
-Text GLabel 2200 6950 2    50   Input ~ 0
-VBAT
-Text GLabel 1250 7050 0    50   Input ~ 0
-GND
-Text GLabel 1250 6950 0    50   Input ~ 0
-3V3T
-Text GLabel 1250 6350 0    50   Input ~ 0
-M2_INA
-Text GLabel 1250 6550 0    50   Input ~ 0
-M2_PWM
-Text GLabel 1250 6850 0    50   Input ~ 0
-M2_INB
-Text GLabel 2200 6850 2    50   Input ~ 0
+Text GLabel 3250 6350 0    50   Input ~ 0
+M1_DIR
+Text GLabel 4150 6050 2    50   Input ~ 0
 GND
 $Comp
 L Connector_Generic:Conn_01x03 J3
 U 1 1 5E2412EE
-P 4350 2250
-F 0 "J3" H 4430 2292 50  0000 L CNN
-F 1 "SERVO_LEVER" H 4430 2201 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 4350 2250 50  0001 C CNN
-F 3 "~" H 4350 2250 50  0001 C CNN
-	1    4350 2250
+P 7300 5700
+F 0 "J3" H 7380 5742 50  0000 L CNN
+F 1 "SERVO_LEVER" H 7380 5651 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 7300 5700 50  0001 C CNN
+F 3 "~" H 7300 5700 50  0001 C CNN
+	1    7300 5700
 	1    0    0    -1  
 $EndComp
+Text GLabel 7100 5600 0    50   Input ~ 0
+VBAT
+Text GLabel 7100 5200 0    50   Input ~ 0
+VBAT
+Text GLabel 5600 5700 0    50   Input ~ 0
+GND
+Text GLabel 7100 6100 0    50   Input ~ 0
+GND
+$Comp
+L DRV:drv8838_breakout U5
+U 1 1 5E1BFCB7
+P 3700 6250
+F 0 "U5" H 3700 6675 50  0000 C CNN
+F 1 "drv8838_breakout" H 3700 6584 50  0000 C CNN
+F 2 "NUSTARS Libs:drv8838_breakout" H 3700 6550 50  0001 C CNN
+F 3 "" H 3700 6550 50  0001 C CNN
+	1    3700 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L DRV:drv8838_breakout U3
+U 1 1 5E1C01F5
+P 3700 5400
+F 0 "U3" H 3700 5825 50  0000 C CNN
+F 1 "drv8838_breakout" H 3700 5734 50  0000 C CNN
+F 2 "NUSTARS Libs:drv8838_breakout" H 3700 5700 50  0001 C CNN
+F 3 "" H 3700 5700 50  0001 C CNN
+	1    3700 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 3250 6450 0    50   Input ~ 0
+M1_DISABLE
+Text GLabel 3250 6050 0    50   Input ~ 0
+GND
+Text GLabel 3250 6150 0    50   Input ~ 0
+3V3T
+Text GLabel 3250 5200 0    50   Input ~ 0
+GND
+Text GLabel 3250 5300 0    50   Input ~ 0
+3V3T
+Text GLabel 4150 5300 2    50   Input ~ 0
+VBAT
+Text GLabel 4150 5200 2    50   Input ~ 0
+GND
+Text GLabel 3250 5400 0    50   Input ~ 0
+M0_PWM
+Text GLabel 3250 5500 0    50   Input ~ 0
+M0_DIR
+Text GLabel 3250 5600 0    50   Input ~ 0
+M0_DISABLE
+$Comp
+L Connector_Generic:Conn_01x03 J2
+U 1 1 5E24D9D0
+P 7300 5300
+F 0 "J2" H 7380 5342 50  0000 L CNN
+F 1 "SERVO_WIRE" H 7380 5251 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 7300 5300 50  0001 C CNN
+F 3 "~" H 7300 5300 50  0001 C CNN
+	1    7300 5300
+	1    0    0    -1  
+$EndComp
+Text GLabel 7100 6000 0    50   Input ~ 0
+5V
+Text GLabel 6150 5300 0    50   Input ~ 0
+GND
 $Comp
 L Connector_Generic:Conn_01x03 J4
 U 1 1 5E241714
-P 4350 2650
-F 0 "J4" H 4430 2692 50  0000 L CNN
-F 1 "SERVO_CLOCK" H 4430 2601 50  0000 L CNN
-F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 4350 2650 50  0001 C CNN
-F 3 "~" H 4350 2650 50  0001 C CNN
-	1    4350 2650
+P 7300 6100
+F 0 "J4" H 7380 6142 50  0000 L CNN
+F 1 "SERVO_CLOCK" H 7380 6051 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B3B-PH-K_1x03_P2.00mm_Vertical" H 7300 6100 50  0001 C CNN
+F 3 "~" H 7300 6100 50  0001 C CNN
+	1    7300 6100
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 2150 0    50   Input ~ 0
-VBAT
-Text GLabel 4150 2550 0    50   Input ~ 0
-5V
-Text GLabel 4150 2250 0    50   Input ~ 0
-GND
-Text GLabel 4150 2650 0    50   Input ~ 0
-GND
-Wire Wire Line
-	3200 2950 4150 2950
-Wire Wire Line
-	4150 2950 4150 2750
-Wire Wire Line
-	4150 2350 3850 2350
-Wire Wire Line
-	3850 2350 3850 2850
-Wire Wire Line
-	3850 2850 3200 2850
 $Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5E2647B6
-P 4350 1550
-F 0 "J2" H 4430 1542 50  0000 L CNN
-F 1 "SMART_AUDIO" H 4430 1451 50  0000 L CNN
-F 2 "" H 4350 1550 50  0001 C CNN
-F 3 "~" H 4350 1550 50  0001 C CNN
-	1    4350 1550
+L Device:Q_NMOS_GSD Q2
+U 1 1 5E287F7D
+P 6350 5200
+F 0 "Q2" V 6599 5200 50  0000 C CNN
+F 1 "GSD" V 6690 5200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6550 5300 50  0001 C CNN
+F 3 "~" H 6350 5200 50  0001 C CNN
+	1    6350 5200
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GSD Q1
+U 1 1 5E2898C1
+P 5800 5600
+F 0 "Q1" V 6049 5600 50  0000 C CNN
+F 1 "GSD" V 6140 5600 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23_Handsoldering" H 6000 5700 50  0001 C CNN
+F 3 "~" H 5800 5600 50  0001 C CNN
+	1    5800 5600
+	0    1    1    0   
+$EndComp
+Text GLabel 7100 5400 0    50   Input ~ 0
+SRV_W_PWM
+Text GLabel 7100 5800 0    50   Input ~ 0
+SRV_L_PWM
+Text GLabel 7100 6200 0    50   Input ~ 0
+SRV_C_PWM
+Wire Wire Line
+	6000 5700 7100 5700
+Wire Wire Line
+	7100 5300 6550 5300
+Text GLabel 5800 5400 1    50   Input ~ 0
+S_L_NMOS
+Text GLabel 6350 5000 1    50   Input ~ 0
+S_W_NMOS
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5E2C3A7C
+P 4600 5400
+F 0 "J5" H 4680 5392 50  0000 L CNN
+F 1 "DRV_MOTOR0" H 4680 5301 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 4600 5400 50  0001 C CNN
+F 3 "~" H 4600 5400 50  0001 C CNN
+	1    4600 5400
 	1    0    0    -1  
 $EndComp
-Text GLabel 4150 1650 0    50   Input ~ 0
-GND
+$Comp
+L Connector_Generic:Conn_01x02 J6
+U 1 1 5E2C40F7
+P 4600 6250
+F 0 "J6" H 4680 6242 50  0000 L CNN
+F 1 "DRV_MOTOR1" H 4680 6151 50  0000 L CNN
+F 2 "Connector_JST:JST_PH_B2B-PH-K_1x02_P2.00mm_Vertical" H 4600 6250 50  0001 C CNN
+F 3 "~" H 4600 6250 50  0001 C CNN
+	1    4600 6250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3200 2750 3650 2750
+	4150 6250 4350 6250
 Wire Wire Line
-	3650 2750 3650 1550
+	4350 6250 4350 6350
 Wire Wire Line
-	3650 1550 4150 1550
+	4350 6350 4400 6350
+Wire Wire Line
+	4400 6250 4400 6300
+Wire Wire Line
+	4400 6300 4300 6300
+Wire Wire Line
+	4300 6300 4300 6350
+Wire Wire Line
+	4300 6350 4150 6350
+Wire Wire Line
+	4150 5500 4300 5500
+Wire Wire Line
+	4300 5500 4300 5400
+Wire Wire Line
+	4300 5400 4400 5400
+Wire Wire Line
+	4400 5500 4400 5450
+Wire Wire Line
+	4400 5450 4200 5450
+Wire Wire Line
+	4200 5450 4200 5400
+Wire Wire Line
+	4200 5400 4150 5400
+$Comp
+L Connector:Conn_01x01_Male J7
+U 1 1 5E2DA59D
+P 8500 4100
+F 0 "J7" H 8472 4032 50  0000 R CNN
+F 1 "Antenna" H 8472 4123 50  0000 R CNN
+F 2 "NUSTARS Libs:Antenna" H 8500 4100 50  0001 C CNN
+F 3 "~" H 8500 4100 50  0001 C CNN
+	1    8500 4100
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8150 4100 8200 4100
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 5E2DCC5D
+P 10300 750
+F 0 "H1" H 10400 796 50  0000 L CNN
+F 1 "MountingHole" H 10400 705 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10300 750 50  0001 C CNN
+F 3 "~" H 10300 750 50  0001 C CNN
+	1    10300 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 5E2DD3DD
+P 10300 1000
+F 0 "H2" H 10400 1046 50  0000 L CNN
+F 1 "MountingHole" H 10400 955 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10300 1000 50  0001 C CNN
+F 3 "~" H 10300 1000 50  0001 C CNN
+	1    10300 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 5E2DD5BD
+P 10300 1250
+F 0 "H3" H 10400 1296 50  0000 L CNN
+F 1 "MountingHole" H 10400 1205 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10300 1250 50  0001 C CNN
+F 3 "~" H 10300 1250 50  0001 C CNN
+	1    10300 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 5E2DD8C1
+P 10300 1500
+F 0 "H4" H 10400 1546 50  0000 L CNN
+F 1 "MountingHole" H 10400 1455 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3.2mm_M3" H 10300 1500 50  0001 C CNN
+F 3 "~" H 10300 1500 50  0001 C CNN
+	1    10300 1500
+	1    0    0    -1  
+$EndComp
+Text GLabel 8450 4300 2    50   Input ~ 0
+LORA_ANTENNA
+Wire Wire Line
+	8200 4300 8200 4100
+Connection ~ 8200 4100
+Wire Wire Line
+	8200 4100 8300 4100
+Wire Wire Line
+	8200 4300 8450 4300
 $EndSCHEMATC

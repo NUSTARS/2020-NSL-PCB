@@ -6,4 +6,5 @@
   (lib (name BNO055)(type Legacy)(uri ${KIPRJMOD}/libs/bno055-breakout.lib)(options "")(descr "")(disabled))
   (lib (name HC-SR04)(type Legacy)(uri ${KIPRJMOD}/libs/HC-SR04.lib)(options "")(descr "")(disabled))
   (lib (name NUSTARS)(type Legacy)(uri ${KIPRJMOD}/NUSTARS.lib)(options "")(descr ""))
+  (lib (name DRV)(type Legacy)(uri ${KIPRJMOD}/libs/drv8838.lib)(options "")(descr ""))
 )
