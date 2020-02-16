@@ -1,3 +1,15 @@
+#include <Adafruit_Sensor.h>
+#include <Adafruit_BNO055.h>
+
+#include <A4988.h>
+#include <BasicStepperDriver.h>
+#include <DRV8825.h>
+#include <DRV8834.h>
+#include <DRV8880.h>
+#include <MultiDriver.h>
+#include <SyncDriver.h>
+
+
 /*
  * Simple demo, should work with any driver board
  *
@@ -104,39 +116,43 @@ void setup() {
 }
 
 void loop() {
-    if (XBee.available())
-    { 
-      // gets message from Xbee and put it into msg
-      codeLength = XBee.readBytesUntil(0x0D, buf, 80);
-      msg = buf;
-      msg = msg.substring(0, codeLength);
-      Serial.println(msg); // Read the msg
-      if(msg == "PING2") {
-        XBee.write("PONG2\n");
-      }
-      //start rotate1 proceedure
-      if(msg == "ROTATE"){
-        XBee.write("Okay, rotating. Mass matrix diagonized: ready for jump!\n");
-        rotate1 = true;
-        Serial.write("Okay, rotating.");
-      }
-      if(msg == "Stop rotate"){
-        XBee.write("Okay, stopped rotating.\n");
-        rotate1 = false;
-        Serial.write("Okay, stopped rotating.");
-      }
-      if(msg == "LetTheDogsOut") {
-        digitalWrite(solenoidPin, HIGH);  
-        XBee.write("Solenoid open: Dogs are out\n");
-        Serial.write("Solenoid open.");
-      }
-      if(msg == "PutDogsBackIn") {
-        digitalWrite(solenoidPin, LOW);  
-        XBee.write("Solenoid closed: Dogs are back in\n");
-        Serial.write("Solenoid closed.");
-      }
-    }
-    if (rotate1) {
+      //bno.getEvent(&event):
+      //if (event.acceleration.x == 0 & event.acceleration.y == 0 & event.acceleration.z == 0){
+      //  but also need to check that it is post-flight and not pre-flight 
+      //  do stuff (ie rotate)
+//    if (XBee.available())
+//    { 
+//      // gets message from Xbee and put it into msg
+//      codeLength = XBee.readBytesUntil(0x0D, buf, 80);
+//      msg = buf;
+//      msg = msg.substring(0, codeLength);
+//      Serial.println(msg); // Read the msg
+//      if(msg == "PING2") {
+//        XBee.write("PONG2\n");
+//      }
+//      //start rotate1 proceedure
+//      if(msg == "ROTATE"){
+//        XBee.write("Okay, rotating. Mass matrix diagonized: ready for jump!\n");
+//        rotate1 = true;
+//        Serial.write("Okay, rotating.");
+//      }
+//      if(msg == "Stop rotate"){
+//        XBee.write("Okay, stopped rotating.\n");
+//        rotate1 = false;
+//        Serial.write("Okay, stopped rotating.");
+//      }
+//      if(msg == "LetTheDogsOut") {
+//        digitalWrite(solenoidPin, HIGH);  
+//        XBee.write("Solenoid open: Dogs are out\n");
+//        Serial.write("Solenoid open.");
+//      }
+//      if(msg == "PutDogsBackIn") {
+//        digitalWrite(solenoidPin, LOW);  
+//        XBee.write("Solenoid closed: Dogs are back in\n");
+//        Serial.write("Solenoid closed.");
+//      }
+//    }
+    if(rotate1) {
       //but new data into event
       digitalWrite(SLEEP, HIGH);
       bno.getEvent(&event);
